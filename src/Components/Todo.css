@@ -1,0 +1,83 @@
+/* General styles for the todo item */
+.todo-item {
+    margin: 15px 0;
+    padding: 12px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-item:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Flex layout for content */
+.todo-content {
+    display: flex;
+    align-items: center;
+}
+
+input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.todo-text {
+    font-size: 1rem;
+    color: #333;
+    flex-grow: 1;
+    word-wrap: break-word;
+}
+
+.completed-task {
+    color: #4caf50; /* Green text for completed tasks */
+}
+
+/* Styling for actions and status */
+.todo-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.todo-status {
+    font-size: 0.95rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.green-icon {
+    color: #4caf50;
+}
+
+.red-icon {
+    color: #f44336;
+}
+
+/* Delete icon */
+.delete-icon {
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.3s;
+}
+
+.delete-icon:hover {
+    transform: scale(1.2);
+    color: #e53935;
+}
+/* Serial number styles */
+.serial-number {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555;
+}
